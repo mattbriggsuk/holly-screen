@@ -1,3 +1,5 @@
+<img width="1919" height="1079" alt="holly_awake" src="https://github.com/user-attachments/assets/ede08d47-af74-4b5d-8231-fe12c59d715a" />
+
 # Holly Talking Head
 
 A static talking-head POC with browser speech recognition, speech synthesis, Three.js animation and OpenAI chat responses.
