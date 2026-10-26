@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Holly Talking Head - Conversation Modes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div class="control-panel">
+      <div class="button-bar" id="controls">
+        <button id="speakBtn">Speak Test</button>
+        <button id="toggleListenBtn">Start Listening</button>
+        <select id="voiceSelect" aria-label="Speaking voice">
+          <option value="">Loading voices...</option>
+        </select>
+        <select id="modelSelect" aria-label="AI model"></select>
+        <button id="keyBtn">API Key</button>
+      </div>
+    </div>
+
+    <div class="help-panel">
+      <div id="status" role="status" aria-live="polite">
+        Listening mode: Say "Holly" to start conversation
+      </div>
+      <div id="info">
+        <strong>Holly Talking Head - Conversation Modes</strong><br /><br />
+        • Start with <strong>"Holly"</strong> → enters Talking mode<br />
+        • In Talking mode: everything you say goes to AI<br />
+        • Say <strong>"Bye Holly"</strong> /
+        <strong>"Go to sleep Holly"</strong> /
+        <strong>"Goodnight Holly"</strong> / <strong>"Sleep Holly"</strong> →
+        sleep mode<br />
+        • Click background to hide/show controls
+      </div>
+
+    </div>
+
+    <div id="listenBar" aria-hidden="true"></div>
+
+    <script src="./libs/three/three.min.js"></script>
+    <script src="./libs/three/OrbitControls.js"></script>
+    <script src="./libs/three/GLTFLoader.js"></script>
+
+    <script type="module" src="./js/app.js"></script>
+  </body>
+</html>
